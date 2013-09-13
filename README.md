@@ -8,10 +8,10 @@ Clone this repository or download the .zip-file and just copy the two source fil
 
 ## Usage  
 There are three methods in the category.
+	+ (instancetype)placeholderImageViewWithFrame:(CGRect)frame;
+Instantiates a new UIImageView object with the specified frame and that loads a placeholder image via the setPlaceholderImage method. 
 
-+ (instancetype)placeholderImageViewWithFrame:(CGRect)frame;
+	- (void)setPlaceholderImage;
 
-- (void)setPlaceholderImage;
-
-- (void)setPlaceholderImageWithCompletionBlock:(void (^)())completion;
+	- (void)setPlaceholderImageWithCompletionBlock:(void (^)())completion;
 
