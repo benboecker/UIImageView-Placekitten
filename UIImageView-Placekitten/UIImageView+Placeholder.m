@@ -14,6 +14,12 @@
 
 - (void)setPlaceholderImage
 {
+    // Call the placeholder method without a completion handler
+    [self setPlaceholderImageWithCompletionBlock:NULL];
+}
+
+- (void)setPlaceholderImageWithCompletionBlock:(void (^)())completion
+{
     // Getting device screen scale so that the placeholder image is sharp enough.
     CGFloat scale = [[UIScreen mainScreen] scale];
     
@@ -39,6 +45,9 @@
             
             // Set the placeholder image
 			self.image = image;
+            
+            // Call the completion handler
+            completion();
 		});
 	});
 }

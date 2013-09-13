@@ -15,4 +15,9 @@
  **/
 - (void)setPlaceholderImage;
 
+/**
+ Loads a placeholder image from placekitten.com fitting to the bounds of the image view. Download takes place on a background queue using Grand Central Dispatch and a completion block is invoked when the download has finished and the image was set.
+ **/
+- (void)setPlaceholderImageWithCompletionBlock:(void (^)())completion;
+
 @end
