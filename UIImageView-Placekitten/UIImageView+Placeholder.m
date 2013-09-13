@@ -45,9 +45,12 @@
             
             // Set the placeholder image
 			self.image = image;
-            
+
             // Call the completion handler
-            completion();
+			if (completion)
+			{
+				completion();
+			}
 		});
 	});
 }

@@ -20,3 +20,6 @@ Loads a placeholder image from [placekitten.com](www.placekitten.com) fitting to
 	- (void)setPlaceholderImageWithCompletionBlock:(void (^)())completion;
 
 Loads a placeholder image from [placekitten.com](www.placekitten.com) fitting to the bounds of the image view. Download takes place on a background queue using Grand Central Dispatch and a completion block is invoked when the download has finished and the image was set.
+
+## Licensing
+The source code is published under a **public domain license**. Do whatever you want with the source code and spread kittens over the world!
